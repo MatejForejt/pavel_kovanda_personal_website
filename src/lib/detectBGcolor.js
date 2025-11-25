@@ -11,7 +11,7 @@ export function detectBGcolor(logoSelector, type = 'logo') {
         element = document.querySelector(logoSelector);
     } else {
         element = logoSelector; // It's already a DOM reference
-    }
+    } 
 
     if (!element) return;   
 

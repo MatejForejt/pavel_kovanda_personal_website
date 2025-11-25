@@ -1,2 +1,2 @@
 # pavel_kovanda_personal_website
-Osobní stránky Pavla Kovandy
+Personal website of Pavel Kovanda made by Freelancer Matěj Forejt, in future under C3Studium (in progress of making). Powered by NEXT.JS a REACT.JS framerwork with Framer-Motion library and custom JavaScript and HTML canvas animations. All under a ownership. Do not directly copy. 

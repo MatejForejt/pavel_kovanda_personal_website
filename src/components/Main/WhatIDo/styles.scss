@@ -1,0 +1,122 @@
+@media (min-aspect-ratio: 1/1) {
+    @media only screen and ( min-width: 1730px) {
+        .WID{
+            width: 100vw;
+            height: 220vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+    @media only screen and (min-width: 1598px) and (max-width: 1729px) {
+        .WID{
+            width: 100vw;
+            height: 220vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+    @media only screen and (min-width: 1420px) and (max-width: 1596px) and (min-height: 820px) {
+        .WID{
+            width: 100vw;
+            height: 230vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+    @media only screen and (min-width: 1420px) and (max-width: 1596px) and (min-height: 750px) {
+        .WID{
+            width: 100vw;
+            height: 230vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+    @media only screen and (min-width: 1260px) and (max-width: 1420px) {
+        .WID{
+            width: 100vw;
+            height: 240vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+    @media only screen and (min-width: 960px) and (max-width: 1240px) {
+        .WID{
+            width: 100vw;
+            height: 230vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+    @media only screen and (min-width: 701px ) and (max-width: 950px) and (min-height: 280px) and (max-height: 600px) {
+        .WID{
+            width: 100vw;
+            height: 320vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+    @media only screen and (min-width: 500px ) and (max-width: 700px) and (min-height: 200px) and (max-height: 380px) {
+        .WID{
+            width: 100vw;
+            height: 320vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    @media only screen and (min-width: 1000px) {
+        .WID{
+            width: 100vw;
+            height: 220vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+    @media only screen and (min-width: 600px) and (max-width: 990px) and (min-height: 800px) {
+        .WID{
+            width: 100vw;
+            height: 260vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+    @media only screen and (min-width: 400px) and (max-width: 600px) and (min-height: 700px) {
+        .WID{
+            width: 100vw;
+            height: 300vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+    @media only screen and (min-width: 380px) and (max-width: 399px) and (min-height: 600px) {
+        .WID{
+            width: 100vw;
+            height: 320vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+    @media only screen and (min-width: 320px) and (max-width: 379px) and (min-height: 450px) {
+        .WID{
+            width: 100vw;
+            height: 340vh;
+            position: relative;
+            background-color: #EDEFF3;
+            z-index: 1;
+        }
+    }
+}

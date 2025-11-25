@@ -12,7 +12,7 @@ export function detectBGcolor(logoSelector, type = 'logo') {
     } else {
         element = logoSelector; // It's already a DOM reference
     } 
-
+ 
     if (!element) return;   
 
     // Generate a unique ID for this element

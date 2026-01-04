@@ -13,17 +13,17 @@ export default function NotFoundPage() {
         <meta name="keywords" content="404, stránka nenalezena, chyba, Pavel Kovanda, instalatér, trafika" />
         <meta name="author" content="Pavel Kovanda" />
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://pavelkovanda.cz" />
+        <link rel="canonical" href="https://www.kovanda28.cz" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://pavelkovanda.cz/404" />
+        <meta property="og:url" content="https://www.kovanda28.cz/404" />
         <meta property="og:title" content="Stránka nenalezena | Pavel Kovanda" />
         <meta property="og:description" content="Omlouváme se, ale hledaná stránka nebyla nalezena. Vraťte se na hlavní stránku s nabídkou instalatérských služeb a trafiky." />
-        <meta property="og:image" content="https://pavelkovanda.cz/images/og-image.jpg" />
+        <meta property="og:image" content="https://www.kovanda28.cz/images/seo/seo.webp" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://pavelkovanda.cz/404" />
+        <meta property="twitter:url" content="https://www.kovanda28.cz/404" />
         <meta property="twitter:title" content="Stránka nenalezena | Pavel Kovanda" />
         <meta property="twitter:description" content="Omlouváme se, ale hledaná stránka nebyla nalezena." />
-        <meta property="twitter:image" content="https://pavelkovanda.cz/images/twitter-image.jpg" />
+        <meta property="twitter:image" content="https://www.kovanda28.cz/images/seo/seo.webp" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -33,7 +33,7 @@ export default function NotFoundPage() {
             "isPartOf": {
               "@type": "WebSite",
               "name": "Pavel Kovanda - Instalatérské služby & Trafika",
-              "url": "https://pavelkovanda.cz"
+              "url": "https://www.kovanda28.cz"
             },
             "publisher": {
               "@type": "Person",

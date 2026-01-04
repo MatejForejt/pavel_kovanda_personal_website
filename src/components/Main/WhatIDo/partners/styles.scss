@@ -1,3 +1,5 @@
+@use "../../../../styles/system/_shortcuts.scss" as *;
+ 
 @media (min-aspect-ratio: 1/1) {
     @media only screen and ( min-width: 1730px) {
         .WID__partners{
@@ -175,12 +177,12 @@
                                 margin: 0;
                                 transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
         
                             &:hover{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 p{
                                     padding-left: 0;
                                 }
@@ -193,7 +195,7 @@
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -391,12 +393,12 @@
                                 margin: 0;
                                 transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
         
                             &:hover{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 p{
                                     padding-left: 0;
                                 }
@@ -409,7 +411,7 @@
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -614,12 +616,12 @@
                                 margin: 0;
                                 transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
         
                             &:hover{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 p{
                                     padding-left: 0;
                                 }
@@ -632,7 +634,7 @@
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -837,12 +839,12 @@
                                 margin: 0;
                                 transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
         
                             &:hover{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 p{
                                     padding-left: 0;
                                 }
@@ -855,7 +857,7 @@
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -1060,12 +1062,12 @@
                                 margin: 0;
                                 transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
         
                             &:hover{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 p{
                                     padding-left: 0;
                                 }
@@ -1078,7 +1080,7 @@
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -1283,12 +1285,12 @@
                                 margin: 0;
                                 transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
         
                             &:hover{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 p{
                                     padding-left: 0;
                                 }
@@ -1301,7 +1303,7 @@
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -1510,12 +1512,12 @@
                                 margin: 0;
                                 transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
         
                             &:hover{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 p{
                                     padding-left: 0;
                                 }
@@ -1528,7 +1530,7 @@
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -1736,12 +1738,12 @@
                                 margin: 0;
                                 transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
         
                             &:hover{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 p{
                                     padding-left: 0;
                                 }
@@ -1754,7 +1756,7 @@
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -1959,12 +1961,12 @@
                                 margin: 0;
                                 transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
         
                             &:hover{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 p{
                                     padding-left: 0;
                                 }
@@ -1977,7 +1979,7 @@
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -2186,12 +2188,12 @@
                                 margin: 0;
                                 transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
         
                             &:hover{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 p{
                                     padding-left: 0;
                                 }
@@ -2204,7 +2206,7 @@
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -2412,14 +2414,14 @@
                                 font-family: 'Times New Roman', Times, serif;
                                 margin: 0;
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
                         }
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -2617,14 +2619,14 @@
                                 font-family: 'Times New Roman', Times, serif;
                                 margin: 0;
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
                         }
         
                         .WID__partners__list__item__link{
                             font-size: 1.2rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;
@@ -2823,7 +2825,7 @@
                                 font-family: 'Times New Roman', Times, serif;
                                 margin: 0;
                                 padding-right: 1vw;
-                                color: #ff1d28;
+                                color: var(--redText);
                                 
                             }
 
@@ -2831,7 +2833,7 @@
         
                         .WID__partners__list__item__link{
                             font-size: 1.1rem;
-                            color: #ff1d28;
+                            color: var(--redText);
                             text-transform: capitalize;
                             font-weight: 300;
                             text-decoration: none;

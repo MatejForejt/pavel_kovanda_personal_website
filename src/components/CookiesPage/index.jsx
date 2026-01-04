@@ -6,38 +6,26 @@ import HashtagButton from "../common/Buttons/hashButton";
 import { useGlobalContext } from "@/context/globalContext";
 
 const wordAnim = {
-    initial: { 
-        opacity: 0, 
-        y: -30 
-    },
+    initial: { opacity: 0, y: 40 },
     enter: (i) => ({
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.3,
-            delay: i * 0.01 + 4.6,
-        },
-        ease: [0.6, 0.05, -0.01, 0.9]
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        delay: (i * 0.02) + 1,
+      },
+      ease: [0.6, 0.05, -0.01, 0.9]
     }),
-}
-
-
-const wordAnim2 = {
-    initial: { 
-        opacity: 0, 
-        y: -30 
-    },
-    enter: (i) => ({
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.3,
-            delay: i * 0.01 + 0.75,
-        },
-        ease: [0.6, 0.05, -0.01, 0.9]
-    }),
-}
-
+    exit: (i) => ({
+      opacity: 0,
+      y: -40,
+      transition: {
+        duration: 0.3,
+        delay: i * 0.02,
+      },
+      ease: [0.6, 0.05, -0.01, 0.9]
+    })
+};
 
 const SplitText = ({ text, variants }) => {
     return text.split("").map((char, index) => {
@@ -78,7 +66,6 @@ export default function CookiesContent() {
     const [activeSection, setActiveSection] = useState(null);
     const sectionRefs = useRef([]);
     const [ isOpen, setIsOpen ] = useState(false)
-    const { slideLoad } = useGlobalContext();
 
     const handleLinkClick = (id) => {
         const section = document.getElementById(id);
@@ -113,15 +100,15 @@ export default function CookiesContent() {
             <div className="cover">
                 <div className="cover__header">
                     <h1>
-                        <SplitText text="CO JSOU COOKIES" variants={ slideLoad ? wordAnim : wordAnim2} />
+                        <SplitText text="CO JSOU COOKIES" variants={wordAnim} />
                     </h1>
                     <h1>
-                        <SplitText text="A JAK JE POUŽÍVÁME" variants={ slideLoad ? wordAnim : wordAnim2} />
+                        <SplitText text="A JAK JE POUŽÍVÁME" variants={wordAnim} />
                     </h1>
                 </div>
                 <div className="cover__desc">
                     <p>
-                        <SplitWords text="Zde si můžete nastavit, ke kterým budeme mít přístup." variant={slideLoad ? wordAnim : wordAnim2} />
+                        <SplitWords text="Zde si můžete nastavit, ke kterým budeme mít přístup." variant={wordAnim} />
                     </p>
                 </div>
             </div>

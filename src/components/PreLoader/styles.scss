@@ -1,3 +1,5 @@
+@use "../../styles/system/_shortcuts.scss" as *;
+ 
 @media (min-aspect-ratio: 1/1) {
     @media only screen and ( min-width: 1730px) {
         .preloader{
@@ -17,7 +19,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -40,7 +42,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 2rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -53,7 +55,7 @@
                         font-size: 8rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -66,7 +68,7 @@
                     overflow: hidden;
                     p{
                         font-size: 2rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }
@@ -90,7 +92,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -113,7 +115,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 2rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -126,7 +128,7 @@
                         font-size: 8rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -139,7 +141,7 @@
                     overflow: hidden;
                     p{
                         font-size: 2rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }
@@ -163,7 +165,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -186,7 +188,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 1.8rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -199,7 +201,7 @@
                         font-size: 6rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -212,7 +214,7 @@
                     overflow: hidden;
                     p{
                         font-size: 1.8rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }
@@ -236,7 +238,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -259,7 +261,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -272,7 +274,7 @@
                         font-size: 5rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -285,7 +287,7 @@
                     overflow: hidden;
                     p{
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }
@@ -309,7 +311,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -332,7 +334,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -345,7 +347,7 @@
                         font-size: 5rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -358,7 +360,7 @@
                     overflow: hidden;
                     p{
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }
@@ -382,7 +384,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -405,7 +407,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 1.4rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -418,7 +420,7 @@
                         font-size: 3.5rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -431,7 +433,7 @@
                     overflow: hidden;
                     p{
                         font-size: 1.4rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }
@@ -455,7 +457,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -478,7 +480,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 1.2rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -491,7 +493,7 @@
                         font-size: 3rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -504,7 +506,7 @@
                     overflow: hidden;
                     p{
                         font-size: 1.2rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }
@@ -531,7 +533,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -554,7 +556,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -567,7 +569,7 @@
                         font-size: 7rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -580,7 +582,7 @@
                     overflow: hidden;
                     p{
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }
@@ -604,7 +606,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -627,7 +629,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -640,7 +642,7 @@
                         font-size: 7rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -653,7 +655,7 @@
                     overflow: hidden;
                     p{
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }
@@ -677,7 +679,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -700,7 +702,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -713,7 +715,7 @@
                         font-size: 6rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -726,7 +728,7 @@
                     overflow: hidden;
                     p{
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }
@@ -750,7 +752,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -773,7 +775,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -786,7 +788,7 @@
                         font-size: 5rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -799,7 +801,7 @@
                     overflow: hidden;
                     p{
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }
@@ -823,7 +825,7 @@
             .preloader__divider{
                 width: 70%;
                 height: 2px;
-                background-color: #fff;
+                background-color: var(--whiteBG);
         
                 &:nth-of-type(3){
                     width: 40%;
@@ -846,7 +848,7 @@
                     overflow: hidden;
                     p{  
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -859,7 +861,7 @@
                         font-size: 4rem;
                         font-family: 'Times New Roman', Times, serif;
                         font-weight: 300;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }
         
@@ -872,7 +874,7 @@
                     overflow: hidden;
                     p{
                         font-size: 1.6rem;
-                        color: #fff;
+                        color: var(--whiteText);
                     }
                 }   
             }

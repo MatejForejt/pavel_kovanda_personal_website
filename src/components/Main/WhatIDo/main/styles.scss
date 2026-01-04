@@ -1,3 +1,5 @@
+@use "../../../../styles/system/_shortcuts.scss" as *;
+ 
 @media (min-aspect-ratio: 1/1) {
     @media only screen and ( min-width: 1730px) {
         .WID__main{
@@ -128,13 +130,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -147,7 +149,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -306,13 +308,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -325,7 +327,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -484,13 +486,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -503,7 +505,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -662,13 +664,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -681,7 +683,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -839,13 +841,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -858,7 +860,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -1016,13 +1018,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -1035,7 +1037,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -1193,13 +1195,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -1212,7 +1214,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -1370,13 +1372,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -1389,7 +1391,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -1552,13 +1554,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -1571,7 +1573,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -1732,13 +1734,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -1751,7 +1753,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -1912,13 +1914,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -1931,7 +1933,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -2092,13 +2094,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -2111,7 +2113,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{
@@ -2272,13 +2274,13 @@
         
                         &:hover{
                             h3{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(-0.5vw);
                             }
         
                             p{
-                                color: #ff1d28;
+                                color: var(--redText);
                                 opacity: 1;
                                 transform: translateX(0.5vw);
                             }
@@ -2291,7 +2293,7 @@
                             font-family: 'Times New Roman', Times, serif;
                             margin: 0;
                             transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                            color: #ff1d28;
+                            color: var(--redText);
                         }
         
                         p{

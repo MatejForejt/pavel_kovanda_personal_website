@@ -1,5 +1,5 @@
 // LoadProvider.jsx
-import React, { createContext, use, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const LoadContext = createContext();
 
@@ -17,15 +17,15 @@ export function LoadProvider({ children }) {
 
     useEffect(() => {
         const time = setTimeout(() => {
-            setFirstLoad(false);
-        }, 4000);
+            setFirstLoad(true);
+        }, 2000);
         return () => clearTimeout(time);
     }, []);
 
     useEffect(() => {
         const time = setTimeout(() => {
-            setSlideLoad(false);
-        }, 7000);
+            setSlideLoad(true);
+        }, 1000);
         return () => clearTimeout(time);
     }, []);
     

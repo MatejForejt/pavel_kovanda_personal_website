@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useAnimationControls } from "framer-motion";
+import Link from "next/link";
 
 // Define character animations
 const charAnim1 = {
@@ -62,7 +63,7 @@ const SplitText = ({ text, active, variants }) => {
   });
 };
 
-export default function CTAButton({ ctaText, onClick, isActive }) {
+export default function CTAButton({ ctaText, onClick, isActive, LinkActive = false, href, className = "" }) {
   const [active, setActive] = useState(false);
   const [ bgActive, setBgActive ] = useState(false);
   const [animationPhase, setAnimationPhase] = useState("initial"); // "initial", "enter", "exit", "reset"
@@ -134,9 +135,35 @@ export default function CTAButton({ ctaText, onClick, isActive }) {
     }
   }, []);
 
-  return (
+  if(LinkActive) {
+    return (
+      <Link
+        className={`cta__button ${className}`}
+        onMouseEnter={onHoverEnter} 
+        onMouseLeave={onHoverLeave}
+        href={href}
+      >
+        <div className="cta__button__container">
+          <label>
+            <SplitText text={ctaText} active={active} variants={charAnim1} />
+          </label>
+          
+          <label>
+            <SplitText text={ctaText} active={active} variants={charAnim2} />
+          </label>
+        </div>
+        
+        <motion.div
+          className="cta__button__background"
+          initial={{left: "-100%"}}
+          animate={controls}
+        />
+      </Link>
+    );
+  } else {
+    return (
     <div
-      className="cta__button" 
+      className={`cta__button ${className}`} 
       onClick={clickEvent} 
       onMouseEnter={onHoverEnter} 
       onMouseLeave={onHoverLeave}
@@ -158,4 +185,7 @@ export default function CTAButton({ ctaText, onClick, isActive }) {
       />
     </div>
   );
+  }
+
+  
 }

@@ -1,0 +1,678 @@
+@use "../../../styles/system/_shortcuts.scss" as *;
+ 
+.main__partners{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10vh 3.5vw;
+
+    .List{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        // hide on touch devices
+        @media (hover: none) and (pointer: coarse) {
+            width: 100%;
+        }
+
+        .title{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            h1{
+                width: fit-content;
+                @include font(h2);
+                font-weight: 300;
+                font-family: Helvetica, sans-serif;
+                color: var(--whiteText);
+                text-transform: uppercase;
+                line-height: 0.5;
+                white-space: normal;
+                margin: 0;
+                overflow: hidden;
+
+                .word{
+                    position: relative;
+                    display: inline-block;
+                    white-space: normal;
+                    margin: 0;
+                    line-height: 1.3;
+                }
+            }
+        }
+
+        .mainDivider{
+            width: 90%;
+            height: 1px;
+            background-color: var(--whiteBG);
+        }
+
+        .list__container{
+            width: 100%;
+            height: auto;
+            position: relative;
+
+            .Parnters__list__item__link{
+                width: 100%;
+                height: fit-content;
+                position: relative;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                text-decoration: none;
+                cursor: pointer;
+                overflow: hidden;
+
+                @include hb((
+                    xxs: (display: none),
+                    smt: (display: none),
+                    mdt: (display: none),
+                    md: (display: flex),
+                ));
+
+                @include vb((
+                    xs: (display: none),
+                ));
+
+                .Parnters__list__item__content{
+                    width: 90%;
+                    height: fit-content;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    padding: 0 1rem;
+                    z-index: 2;
+                    overflow: hidden;
+
+
+                    .Parnters__list__nameText{
+                        width: fit-content;
+                        height: fit-content;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        z-index: 1;
+
+                        p{  
+                            width: 100%;
+                            height: 100%;
+                            margin: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0.5rem 0;
+
+                            .span{
+                                display: inline-block;
+                                height: fit-content;
+                                @include font(h3);
+                                font-weight: 300;
+                                color: var(--whiteText);
+                                margin: auto;
+                                z-index: 2;
+                            }
+
+                            .active-route-span{
+                                color: var(--redText) !important;
+                            }
+
+                            &:nth-of-type(2){
+                                position: absolute;
+                                top: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                z-index: 1;
+                                pointer-events: none;
+                                .span{
+                                    color: var(--redText) !important;
+                                    z-index: 1;
+                                }
+                            }
+                        }
+                    }
+
+                    .ListLink__button__link{
+                        text-decoration: none;
+                        width: fit-content;
+                        height: 2.5rem;
+                        position: relative;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                        overflow: hidden;
+                        gap: 0.25vh;
+                        cursor: pointer;
+                        z-index: 1;
+
+                        @include hb((
+                            xxs: (display: flex),
+                            smt: (display: flex),
+                            mdt: (display: flex),
+                            md: (display: none),
+                        ));
+
+                        @include vb((
+                            xs: (display: flex),
+                        ));
+
+                        .ListLink__button__container{
+                            width: fit-content;
+                            height: 1.5rem;
+                            position: relative;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: flex-end;
+                            gap: 0.15vw;
+                            .ListLink__button__container__text{
+                                width: fit-content;
+                                height: fit-content;
+                                display: flex;
+                                align-items: flex-end;
+                                justify-content: flex-start;
+                                position: relative;
+                                p{  
+                                    width: 100%;
+                                    margin: 0;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    justify-content: flex-start;
+
+
+                                    span{
+                                        @include font(SCTA);
+                                        font-weight: 300;
+                                        font-family: Helvetica;
+                                        color: var(--redText);
+                                    }
+
+
+                                    .span{
+                                        display: inline-block;
+                                        @include font(SCTA);
+                                        font-weight: 300;
+                                        color: var(--redText);
+                                        margin: 0;
+                                        z-index: 2;
+                                    }
+                                }
+                            }
+
+                            .ListLink__button__container__arrow{
+                                width: fit-content;
+                                height: 100%;
+                                display: flex;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+                                position: relative;
+                                .arrow__primary__arrow{
+                                    position: relative;
+                                    width: 0.75rem;
+                                    height: 0.75rem;
+                                    .img{
+                                        width: 0.75rem;
+                                        height: 0.75rem;
+                                        filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(5800%) hue-rotate(349deg) brightness(115%) contrast(110%);                            
+                                    }
+                                }
+                            }
+                        }
+                        .line{
+                            width: 100%;
+                            height: 0.5px;
+                            background-color: var(--redBG);
+                        }
+                    }
+
+                    .ListLink__button{
+                        text-decoration: none;
+                        width: fit-content;
+                        height: 2.5rem;
+                        position: relative;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                        overflow: hidden;
+                        gap: 0.25vh;
+                        cursor: pointer;
+                        z-index: 1;
+
+                        @include hb((
+                            xxs: (display: none),
+                            smt: (display: none),
+                            mdt: (display: none),
+                            md: (display: flex),
+                        ));
+
+                        @include vb((
+                            xs: (display: none),
+                        ));
+
+                        .ListLink__button__container{
+                            width: fit-content;
+                            height: 1.5rem;
+                            position: relative;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: flex-end;
+                            gap: 0.15vw;
+                            .ListLink__button__container__text{
+                                width: fit-content;
+                                height: fit-content;
+                                display: flex;
+                                align-items: flex-end;
+                                justify-content: flex-start;
+                                position: relative;
+                                p{  
+                                    width: 100%;
+                                    margin: 0;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    justify-content: flex-start;
+
+
+                                    span{
+                                        @include font(SCTA);
+                                        font-weight: 300;
+                                        font-family: Helvetica;
+                                        color: var(--redText);
+                                    }
+
+
+                                    .span{
+                                        display: inline-block;
+                                        @include font(SCTA);
+                                        font-weight: 300;
+                                        color: var(--redText);
+                                        margin: 0;
+                                        z-index: 2;
+                                    }
+                                }
+                            }
+
+                            .ListLink__button__container__arrow{
+                                width: fit-content;
+                                height: 100%;
+                                display: flex;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+                                position: relative;
+                                .arrow__primary__arrow{
+                                    position: relative;
+                                    width: 0.75rem;
+                                    height: 0.75rem;
+                                    .img{
+                                        width: 0.75rem;
+                                        height: 0.75rem;
+                                        filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(5800%) hue-rotate(349deg) brightness(115%) contrast(110%);                            
+                                    }
+                                }
+                            }
+                        }
+                        .line{
+                            width: 100%;
+                            height: 0.5px;
+                            background-color: var(--redBG);
+                        }
+                    }
+
+                    .background{
+                        width: 100%;
+                        position: absolute;
+                        height: 100%;
+                        background-color: rgb(0, 6, 19, 0.5);
+                        z-index: 0;
+                    }
+                }
+
+                .divider{
+                    width: 90%;
+                    height: 1px;
+                    background-color: var(--whiteBG);
+                    opacity: 0.8;
+                    z-index: 1;
+                }
+
+            }
+            .Partners__list__item{
+                width: 100%;
+                height: fit-content;
+                position: relative;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                text-decoration: none;
+                cursor: pointer;
+                overflow: hidden;
+
+                @include hb((
+                    xxs: (display: flex),
+                    smt: (display: flex),
+                    mdt: (display: flex),
+                    md: (display: none),
+                ));
+
+                @include vb((
+                    xs: (display: flex),
+                ));
+
+                .Parnters__list__item__content{
+                    width: 90%;
+                    height: fit-content;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    padding: 0 1rem;
+                    z-index: 2;
+                    overflow: hidden;
+
+
+                    .Parnters__list__nameText{
+                        width: fit-content;
+                        height: fit-content;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        z-index: 1;
+
+                        p{  
+                            width: 100%;
+                            height: 100%;
+                            margin: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0.5rem 0;
+
+                            .span{
+                                display: inline-block;
+                                height: fit-content;
+                                @include font(h3);
+                                font-weight: 300;
+                                color: var(--whiteText);
+                                margin: auto;
+                                z-index: 2;
+                            }
+
+                            .active-route-span{
+                                color: var(--redText) !important;
+                            }
+
+                            &:nth-of-type(2){
+                                position: absolute;
+                                top: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                z-index: 1;
+                                pointer-events: none;
+                                .span{
+                                    color: var(--redText) !important;
+                                    z-index: 1;
+                                }
+                            }
+                        }
+                    }
+
+                    .ListLink__button__link{
+                        text-decoration: none;
+                        width: fit-content;
+                        height: 2.5rem;
+                        position: relative;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                        overflow: hidden;
+                        gap: 0.25vh;
+                        cursor: pointer;
+                        z-index: 1;
+
+                        @include hb((
+                            xxs: (display: flex),
+                            smt: (display: flex),
+                            mdt: (display: flex),
+                            md: (display: none),
+                        ));
+
+                        @include vb((
+                            xs: (display: flex),
+                        ));
+
+                        .ListLink__button__container{
+                            width: fit-content;
+                            height: 1.5rem;
+                            position: relative;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: flex-end;
+                            gap: 0.15vw;
+                            .ListLink__button__container__text{
+                                width: fit-content;
+                                height: fit-content;
+                                display: flex;
+                                align-items: flex-end;
+                                justify-content: flex-start;
+                                position: relative;
+                                p{  
+                                    width: 100%;
+                                    margin: 0;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    justify-content: flex-start;
+
+
+                                    span{
+                                        @include font(SCTA);
+                                        font-weight: 300;
+                                        font-family: Helvetica;
+                                        color: var(--redText);
+                                    }
+
+
+                                    .span{
+                                        display: inline-block;
+                                        @include font(SCTA);
+                                        font-weight: 300;
+                                        color: var(--redText);
+                                        margin: 0;
+                                        z-index: 2;
+                                    }
+                                }
+                            }
+
+                            .ListLink__button__container__arrow{
+                                width: fit-content;
+                                height: 100%;
+                                display: flex;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+                                position: relative;
+                                .arrow__primary__arrow{
+                                    position: relative;
+                                    width: 0.75rem;
+                                    height: 0.75rem;
+                                    .img{
+                                        width: 0.75rem;
+                                        height: 0.75rem;
+                                        filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(5800%) hue-rotate(349deg) brightness(115%) contrast(110%);                            
+                                    }
+                                }
+                            }
+                        }
+                        .line{
+                            width: 100%;
+                            height: 0.5px;
+                            background-color: var(--redBG);
+                        }
+                    }
+
+                    .ListLink__button{
+                        text-decoration: none;
+                        width: fit-content;
+                        height: 2.5rem;
+                        position: relative;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                        overflow: hidden;
+                        gap: 0.25vh;
+                        cursor: pointer;
+                        z-index: 1;
+
+                        @include hb((
+                            xxs: (display: none),
+                            smt: (display: none),
+                            mdt: (display: none),
+                            md: (display: flex),
+                        ));
+
+                        @include vb((
+                            xs: (display: none),
+                        ));
+
+                        .ListLink__button__container{
+                            width: fit-content;
+                            height: 1.5rem;
+                            position: relative;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: flex-end;
+                            gap: 0.15vw;
+                            .ListLink__button__container__text{
+                                width: fit-content;
+                                height: fit-content;
+                                display: flex;
+                                align-items: flex-end;
+                                justify-content: flex-start;
+                                position: relative;
+                                p{  
+                                    width: 100%;
+                                    margin: 0;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    justify-content: flex-start;
+
+
+                                    span{
+                                       @include font(SCTA);
+                                        font-weight: 300;
+                                        font-family: Helvetica;
+                                        color: var(--redText);
+                                    }
+
+
+                                    .span{
+                                        display: inline-block;
+                                        @include font(SCTA);
+                                        font-weight: 300;
+                                        color: var(--redText);
+                                        margin: 0;
+                                        z-index: 2;
+                                    }
+                                }
+                            }
+
+                            .ListLink__button__container__arrow{
+                                width: fit-content;
+                                height: 100%;
+                                display: flex;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+                                position: relative;
+                                .arrow__primary__arrow{
+                                    position: relative;
+                                    width: 0.75rem;
+                                    height: 0.75rem;
+                                    .img{
+                                        width: 0.75rem;
+                                        height: 0.75rem;
+                                        filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(5800%) hue-rotate(349deg) brightness(115%) contrast(110%);                            
+                                    }
+                                }
+                            }
+                        }
+                        .line{
+                            width: 100%;
+                            height: 0.5px;
+                            background-color: var(--redBG);
+                        }
+                    }
+
+                    .background{
+                        width: 100%;
+                        position: absolute;
+                        height: 100%;
+                        background-color: rgb(0, 6, 19, 0.5);
+                        z-index: 0;
+                    }
+                }
+
+                .divider{
+                    width: 90%;
+                    height: 1px;
+                    background-color: var(--whiteBG);
+                    opacity: 0.8;
+                    z-index: 1;
+                }
+
+            }
+        }
+    }
+
+    .Images{
+        position: relative;
+        width: 40%;
+        height: 100%;
+
+        // hide on touch devices
+        @media (hover: none) and (pointer: coarse) {
+            display: none;
+        }
+
+    
+        .Images__wrapper__vertical{
+            position: absolute;
+            width: 25vw;
+            height: 60vh;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+
+            .Image__container{
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+        }
+        .Images__wrapper__horizontal{
+            position: absolute;
+            width: 35vw;
+            height: 40vh;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+
+            .Image__container{
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+        }
+    }
+}

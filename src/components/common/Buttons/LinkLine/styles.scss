@@ -1,0 +1,147 @@
+@use "../../../../styles/system/_shortcuts.scss" as *;
+
+.footer__links__creator__link{
+    text-decoration: none;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 0.25vh;
+    cursor: pointer;
+
+    @include hb((
+        xxs: (height: 3rem),
+        sm: (height: 4rem),
+    ));
+
+    @include vb((
+        xs:(height: 2rem),
+    ));
+
+    .footer__links__creator__link__container{
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 1.5px;
+        .footer__links__creator__link__container__text{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            position: relative;
+            
+            p{  
+                width: 100%;
+                margin: 0;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+                margin-top: 5px;
+
+
+                span{
+                    @include font(Nav);
+                    font-weight: 300;
+                    font-family: Helvetica;
+                    color: var(--whiteText);
+                }
+
+                &:nth-of-type(2){
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+
+                    span{
+                        color: var(--redText);
+                    }
+                }
+
+                .span{
+                    display: inline-block;
+                    @include font(Nav);
+                    font-weight: 300;
+                    color: var(--whiteText);
+                    text-transform: uppercase;
+                    margin: 0;
+                    z-index: 2;
+                }
+
+                .NavSpan{
+                    display: inline-block;
+                    @include font(h2);
+                    font-weight: 300;
+                    color: var(--whiteText);
+                    text-transform: uppercase;
+                    margin: 0;
+                    z-index: 2;
+                }
+
+                .active-route-span{
+                    color: var(--redText) !important;
+                }
+
+                &:nth-of-type(2){
+                    position: absolute;
+                    top: 0rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 1;
+                    pointer-events: none;
+                    .span{
+                        color: var(--redText) !important;
+                        z-index: 1;
+                    }
+                    .NavSpan{
+                        color: var(--redText) !important;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
+        .footer__links__creator__link__container__arrow{
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: relative;
+            .arrow__primary__arrow{
+                position: relative;
+                width: 10px;
+                height: 10px;
+                .img{
+                    width: 10px;
+                    height: 10px;
+
+                }
+                &:nth-of-type(2){
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    .img{
+                        filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(5800%) hue-rotate(349deg) brightness(115%) contrast(110%);                            
+                    }
+                }
+            }
+
+            .active-route-span{
+                img{
+                    filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(5800%) hue-rotate(349deg) brightness(115%) contrast(110%);                            
+                }
+            }
+        }
+    }
+    .line{
+        width: 100%;
+        height: 0.5px;
+        background-color: var(--redBG);
+    }
+}

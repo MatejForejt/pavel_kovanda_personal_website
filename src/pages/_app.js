@@ -1,24 +1,21 @@
-import BackgroundGradient from "@/components/common/Backgorund";
+import BackgroundGradient from "@/components/common/Background";
 import Footer from "@/components/common/Footer";
-import Logo from "@/components/common/Navbar/head";
 import Nav from "@/components/common/Navbar/nav";
 import Transition from "@/components/common/Transition";
 import CookiesBar from "@/components/modems/Cookies";
 import { CookiesProvider } from "@/context/CookiesProvider";
 import { LoadProvider } from "@/context/globalContext";
 import "@/styles/globals.scss";
-import "@/styles/styles.scss"; 
 import { AnimatePresence } from "framer-motion";
 import Lenis from "lenis";
 import { useRouter } from "next/router";
-import { useEffect, useRef } from "react";
+import { useEffect} from "react";
 import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/react"
 
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const footerRef = useRef(null);
   useEffect(() => {
     window.lenis = new Lenis({
       duration: 0.8,           
@@ -55,20 +52,19 @@ export default function App({ Component, pageProps }) {
     <>
       <CookiesProvider>
         <LoadProvider>
-          <Logo footerRef={footerRef} />
-          <Nav footerRef={footerRef} />
+          <Nav/>
           <BackgroundGradient />
           <CookiesBar />
           <AnimatePresence mode="wait" onExitComplete={() => {
             // Additional safety check - ensure scroll is at top after exit animation completes
-              window.scrollTo(0, 0);
+            window.scrollTo(0, 0);
               if (window.lenis) window.lenis.scrollTo(0, { immediate: true });
             }}
           >
               <Transition key={router.pathname}>
                 <Analytics />
                 <Component {...pageProps} />
-                <Footer ref={footerRef} />
+                <Footer/>
               </Transition>
             </AnimatePresence>
           </LoadProvider>

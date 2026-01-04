@@ -1,0 +1,130 @@
+@use "../../../../styles/system/_shortcuts.scss" as *;
+ 
+.cta__button__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border: 1px solid #ff1d28;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        border: 1px solid #fff;
+    }
+
+    @include hb((
+        xxs: (width: 175px, height: 30px),
+    ));
+
+    @include vb((
+        xs: (width: 175px, height: 30px),
+    ));
+
+    .cta__button__container{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 0.25rem;
+        overflow: hidden;
+        z-index: 2;
+
+        .cta__button__container__text{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            p{  
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .span{
+                    display: inline-block;
+                    height: fit-content;
+                    @include font(SCTA);
+                    font-weight: 300;
+                    color: var(--logo-color-on-dark);
+                    text-transform: uppercase;
+                    margin: auto;
+                    z-index: 2;
+                }
+
+                .active-route-span{
+                    color: var(--redText) !important;
+                }
+
+                &:nth-of-type(2){
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 1;
+                    pointer-events: none;
+                    .span{
+                        color: var(--redText) !important;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
+        .cta__button__container__arrow{
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: relative;
+            padding-top: 0.25rem;
+
+            .arrow__primary__arrow{
+                position: relative;
+                width: 0.6rem;
+                height: 0.6rem;
+                .img{
+                    width: 0.6rem;
+                    height: 0.6rem;
+                }
+                &:nth-of-type(2){
+                    position: absolute;
+                    top: 0.25rem;
+                    left: 0;
+                    .img{
+                        filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(5800%) hue-rotate(349deg) brightness(115%) contrast(110%);                            
+                    }
+                }
+            }
+
+            .active-route-span{
+                .img{
+                    filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(5800%) hue-rotate(349deg) brightness(115%) contrast(110%);                            
+                }
+            }
+        }
+    }
+
+    .cta__button__background{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        scale: 1;
+        background: linear-gradient(to right, #0F4A57, #039ca4);
+        z-index: 1;
+    }
+}

@@ -1,0 +1,109 @@
+@use "../../styles/system/_shortcuts.scss" as *;
+ 
+.TestComponent{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .imageContent{
+        position: absolute;
+        top: 25vh;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        z-index: -1;
+        
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }   
+        .image{
+            z-index: 0;
+            object-fit: cover;
+        }
+    }
+
+    .textContent{
+        width: 50%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20vw;
+
+        .textInner{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            color: #ffff;
+            gap: 1em;
+
+            h1{
+                display: inline-block;
+                font-size: 3rem;
+                font-weight: 500;
+                line-height: 0.8;
+                margin: 0;
+                font-family: "Arimo" , sans-serif;
+                .word{
+                    display: inline-block;
+                    margin-right: 0.75rem;
+
+                    .char{
+                        display: inline-block;
+                        margin: 0 0.05rem 0 0;
+                    }
+                }
+            }
+            h3{
+                display: inline-block;
+                font-size: 2rem;
+                font-weight: 400;
+                line-height: 1.2;
+                margin: 0;
+                font-family: "Arimo" , sans-serif;
+                .word{
+                    display: inline-block;
+                    margin: 0 0.35rem 0 0;
+
+                    .char{
+                        display: inline-block;
+                        margin: 0 0.05rem 0 0;
+                    }
+                }
+            }
+            p{
+                display: inline-block;
+                font-size: 1.1rem;
+                font-weight: 300;
+                line-height: 1.2;
+                margin: 0;
+                font-family: "Arimo" , sans-serif;
+                .word{
+                    display: inline-block;
+                    margin: 0 0.15rem 0 0;
+                    .char{
+                        display: inline-block;
+                        margin: 0 0.01rem 0 0;
+                    }
+                }
+            }
+
+            a{
+                pointer-events: all;
+            }
+        }
+    }
+
+}

@@ -1,11 +1,44 @@
-@use './styles.scss' as styles;
+// AUTO-IMPORT START
+@use "../components/404/styles.scss" as _s0;
+@use "../components/common/Background/styles.scss" as _s1;
+@use "../components/common/Buttons/CTA/styles.scss" as _s2;
+@use "../components/common/Buttons/CTALink/styles.scss" as _s3;
+@use "../components/common/Buttons/hashButton/styles.scss" as _s4;
+@use "../components/common/Buttons/LinkLine/styles.scss" as _s5;
+@use "../components/common/Footer/styles.scss" as _s6;
+@use "../components/common/homeNav/nav/style.scss" as _s7;
+@use "../components/common/Navbar/nav/style.scss" as _s8;
+@use "../components/common/Transition/styles.scss" as _s9;
+@use "../components/CookiesPage/styles.scss" as _s10;
+@use "../components/FotoGalerie/galery/styles.scss" as _s11;
+@use "../components/FotoGalerie/styles.scss" as _s12;
+@use "../components/Main/Contact/styles.scss" as _s13;
+@use "../components/Main/Intro/styles.scss" as _s14;
+@use "../components/Main/Trafika/styles.scss" as _s15;
+@use "../components/Main/WhatIDo/intro/styles.scss" as _s16;
+@use "../components/Main/WhatIDo/main/styles.scss" as _s17;
+@use "../components/Main/WhatIDo/partners/styles.scss" as _s18;
+@use "../components/Main/WhatIDo/styles.scss" as _s19;
+@use "../components/modems/Cookies/styles.scss" as _s20;
+@use "../components/modems/CookiesModem/styles.scss" as _s21;
+@use "../components/Partners/main/styles.scss" as _s22;
+@use "../components/PreLoader/styles.scss" as _s23;
+@use "../components/TermsPage/styles.scss" as _s24;
+@use "../components/test/style.module.scss" as _s25;
+@use "../components/Trafika/Intro/styles.scss" as _s26;
+@use "../components/Trafika/Main/intro/styles.scss" as _s27;
+@use "../components/Trafika/Main/news/styles.scss" as _s28;
+@use "../components/Trafika/Main/products/styles.scss" as _s29;
+@use "../components/Trafika/Main/styles.scss" as _s30;
+@use "../components/Trafika/Main/text/styles.scss" as _s31;
+// AUTO-IMPORT END
 
 body{
   width: 100vw;
   height: fit-content;
   margin: 0;
   font-family: "Arimo", sans-serif;
-  background-color: #0F4A57;
+  background-color: var(--bg-main);
   * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -22,8 +55,4 @@ body{
 
 .main{
   width: 100vw;
-}
-:root {
-  --logo-color-on-light: #05050a; /* Logo color when on light background */
-  --logo-color-on-dark: #ffffff;  /* Logo color when on dark background */
 }

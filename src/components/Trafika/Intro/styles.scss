@@ -1,1134 +1,262 @@
-@media (min-aspect-ratio: 1/1) {
-    @media only screen and ( min-width: 1730px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 12rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 2.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0 0 2rem 0;
-                    .span{
-                        font-size: 4rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 120%; 
-                    height: 120%; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -10%; 
-                    scale: 1.02; 
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 1598px) and (max-width: 1729px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 12rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 2.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0 0 2rem 0;
-                    .span{
-                        font-size: 4rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 120%; 
-                    height: 120%; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -10%; 
-                    scale: 1.02; 
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 1420px) and (max-width: 1596px) and (min-height: 820px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 2.5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 12rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 2.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0 0 2rem 0;
-                    .span{
-                        font-size: 4rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 120%; 
-                    height: 120%; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -10%; 
-                    scale: 1.02; 
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 1420px) and (max-width: 1596px) and (min-height: 750px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 2.5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 12rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 2.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0 0 2rem 0;
-                    .span{
-                        font-size: 4rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 120%; 
-                    height: 120%; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -10%; 
-                    scale: 1.02; 
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 1260px) and (max-width: 1420px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 9rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 2.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0 0 2rem 0;
-                    .span{
-                        font-size: 3rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 120%; 
-                    height: 120%; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -10%; 
-                    scale: 1.02; 
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 960px) and (max-width: 1240px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 8rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 2.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0 0 2rem 0;
-                    .span{
-                        font-size: 3rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 120%; 
-                    height: 120%; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -10%; 
-                    scale: 1.02; 
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 701px ) and (max-width: 950px) and (min-height: 280px) and (max-height: 600px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 6rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 2.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0 0 0 0;
-                    .span{
-                        font-size: 1.8rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 120%; 
-                    height: 120%; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -10%; 
-                    scale: 1.02; 
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 500px ) and (max-width: 700px) and (min-height: 200px) and (max-height: 380px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 5rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 1.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0 0 0 0;
-                    .span{
-                        font-size: 1.6rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 120%; 
-                    height: 120%; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -10%; 
-                    scale: 1.02; 
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-}
+@use "../../../styles/system/_shortcuts.scss" as *;
+ 
+.intro__trafika{
+    width: 100vw;
+    height: 150vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 2;
 
-@media (max-aspect-ratio: 1/1) {
-    @media only screen and (min-width: 1000px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
+    .intro__trafika__sticky{
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        position: sticky;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 5vh 5vw;
+
+                
+        .intro__trafika__content{
+            width: 100%;
+            height: 100%;
             display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 5vh 5vw;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            color: var(--whiteText);
+            position: relative;
             z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
+            h1{
                 position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                line-height: 0.9;
+
+                @include hb((
+                    xxs: (margin: 10vh 0 0 0),
+                    smt: (margin: 25vh 0 0 0),
+                    mdt: (margin: 25vh 0 0 0),
+                    md: (margin: 25vh 0 0 0),
+                ));
+                @include vb((
+                    xs: (margin: 30vh 0 0 0),
+                    md: (margin: 25vh 0 0 0),
+                ));
+                .span{
+                    @include font(h1); 
+                    font-weight: 300;
                     margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 8rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 2.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0 0 2rem 0;
-                    .span{
-                        font-size: 4rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
+                    letter-spacing: 0.5rem;
+                    text-transform: uppercase;
+                    font-family: Helvetica;
                 }
             }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
+    
+            h2{
+                position: relative;
                 display: flex;
-                justify-content: center;
+                flex-direction: row;
+                justify-content: flex-start;
                 align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 240vh; 
-                    height: 120vh; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -60%; 
-                    scale: 1.02; 
-                    object-fit: cover;
+                margin: 0 0 0 1rem;
+                .span{
+                    @include font(h3);
+                    font-weight: 300;
+                    margin: 0;
+                    letter-spacing: 0.5rem;
+                    text-transform: capitalize;
+                    font-family: Helvetica;
+                }
+            }
+
+
+            .divider{
+                width: 50%;
+                height: 1px;
+                margin-left: 1rem;
+                // margin-bottom: 1rem;
+                background: linear-gradient(90deg, #FFF, #039ca4);
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+                &:nth-of-type(2){
+                    width: 30%;
+                    background: #fff;
+                }
+            }
+
+            .subText{
+                width: 100%;
+                height: 35%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                flex-direction: column;
+
+                @include hb((
+                    xxs: (margin: 20vh 0 0 0),
+                    smt: (margin: 10vh 0 0 0),
+                    mdt: (margin: 10vh 0 0 0),
+                    md: (margin: 10vh 0 0 0),
+                ));
+                @include vb((
+                    xs: (margin: 20vh 0 0 0),
+                    md: (margin: 5vh 0 0 0),
+                ));
+
+                .subtext__informations{
+                    width: 100%;
+                    height: 100%;
+                    margin-left: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    @include hb((
+                        xxs: (flex-direction: row),
+                    ));
+                    @include vb((
+                        xs: (flex-direction: column, gap: 1rem),
+                        md: (flex-direction: row, gap: 0),
+                    ));
+
+                    ol{
+                        margin: 0;
+                        padding: 0;
+                        list-style: disc;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-end;
+                        flex-direction: column;
+
+                        @include hb((
+                            xxs: (width: 35%),
+                            smt: (width: 35%),
+                            mdt: (width: 25%),
+                            md: (width: 25%),
+                        ));
+
+                        @include vb((
+                            xs: (width: 100%),
+                            md: (width: 25%),
+                        ));
+                        p{
+                            margin: 0;
+                            @include font(MBody);
+                            font-weight: 300;
+                            font-family: Helvetica;
+                            color: var(--whiteText);
+
+                        }
+
+                        li{
+                            margin: 0 0 0 2rem;
+                            @include font(SBody);
+                            font-weight: 300;
+                            font-family: Helvetica;
+                            color: var(--whiteText);
+                            padding: 0.05rem 0;
+                        }
+                        .LIdivider{
+                            width: 90%;
+                            height: 1px;
+                            margin: 0.15rem 0 1rem 0;
+                            background: linear-gradient(90deg, #FFF, #039ca4);
+                            color: transparent;
+                            -webkit-text-fill-color: transparent;
+                        }
+                }
+                }
+
+                .subtext__author{
+                    height: fit-content;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    @include hb((
+                        xxs: (width: 90%, margin-bottom: 0.5rem, margin-top: 0.5rem),
+                        xs: (width: 70%, margin-bottom: 0.5rem,),
+                        smt: (width: 70%, margin-bottom: 2rem, margin-top: 0),
+                        mdt: (width: 50%, margin-bottom: 2rem, margin-top: 0),
+                        md: (width: 50%, margin-bottom: 2rem, margin-top: 0),
+                    ));
+
+                    @include vb((
+                        xs: (width: 100%, margin-bottom: 0.5rem, margin-top: 0.5rem),
+                        md: (width: 50%, margin-bottom: 2rem, margin-top: 0),
+                    ));
+
+                    ol{
+                        width: fit-content;
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        flex-direction: row;
+                        gap: 1.5rem;
+
+                        p{
+                            margin: 0;
+                            @include font(MBody);
+                            font-weight: 300;
+                            font-family: Helvetica;
+                            color: var(--whiteText);
+                        }
+                        .LIdivider{
+                            width: 1px;
+                            height: 3vh;
+                            background: linear-gradient(180deg, #FFF, #039ca4);
+                            color: transparent;
+                            -webkit-text-fill-color: transparent;
+                        }
+                        li{
+                            margin: 0;
+                            @include font(SBody);
+                            font-weight: 300;
+                            font-family: Helvetica;
+                            color: var(--whiteText);
+                        }
+                    }
                 }
             }
         }
-    }
-    @media only screen and (min-width: 600px) and (max-width: 990px) and (min-height: 800px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
+    
+        .intro__trafika__bg{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
-            padding: 5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 5rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 2.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0;
-                    .span{
-                        font-size: 3rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
+
             .intro__trafika__background{
                 width: 100%;
                 height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
+                position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 z-index: 1;
                 overflow: hidden;
+                box-shadow: 0px 0px 25px rgb(0,0,0,0.8) ;
         
                 .intro__trafika__background__container{
-                    width: 240vh; 
-                    height: 120vh; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -70%; 
-                    scale: 1.02; 
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 400px) and (max-width: 600px) and (min-height: 700px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 4rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 0.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
+                    width: 140%; 
+                    height: 140%; 
+                    img{
+                        object-fit: cover;
                     }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0;
-                    .span{
-                        font-size: 2.5rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 240vh; 
-                    height: 120vh; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -100%; 
-                    scale: 1.02; 
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 380px) and (max-width: 399px) and (min-height: 600px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 3.5rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 0.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0;
-                    .span{
-                        font-size: 2.5rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 240vh; 
-                    height: 120vh; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -110%; 
-                    scale: 1.02; 
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: 320px) and (max-width: 379px) and (min-height: 450px) {
-        .intro__trafika{
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 5vh 5vw;
-            z-index: 2;
-            overflow: hidden;
-        
-            .intro__trafika__content{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                color: #fff;
-                position: relative;
-                gap: 5vw;
-                z-index: 2;
-                h1{
-                    position: relative;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-        
-                    .span{
-                        text-transform: uppercase;
-                        font-family: Helvetica;
-                        font-size: 3rem;
-                        font-weight: 300;
-                        margin: 0;
-                        letter-spacing: 0.5rem;
-                        // Text gradient implementation
-                        background: linear-gradient(90deg, #FFF, #039ca4);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-        
-                h2{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0;
-                    .span{
-                        font-size: 2rem;
-                        font-weight: 300;
-                        margin: 0;
-                        text-transform: capitalize;
-                        font-family: 'Times New Roman', Times, serif;
-                    }
-                }
-            }
-        
-            .intro__trafika__background{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                overflow: hidden;
-        
-                .intro__trafika__background__container{
-                    width: 240vh; 
-                    height: 120vh; 
-                    position: absolute; 
-                    top: -10%; 
-                    left: -90%; 
-                    scale: 1.02; 
-                    object-fit: cover;
                 }
             }
         }

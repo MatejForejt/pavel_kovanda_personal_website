@@ -2,7 +2,6 @@ import { useState } from "react";
 import Intro from "./intro";
 import Main from "./main";
 import Partners from "./partners";
-import BackgroundGradient from "../../common/Backgroundwhite";
 
 export default function WhatIDo(){
     const [modal, setModal] = useState({ active: false, index: 0 });

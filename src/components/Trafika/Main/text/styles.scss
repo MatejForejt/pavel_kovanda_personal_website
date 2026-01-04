@@ -1,3 +1,5 @@
+@use "../../../../styles/system/_shortcuts.scss" as *;
+ 
 @media (min-aspect-ratio: 1/1) {
     @media only screen and ( min-width: 1730px) {
         .trafika__main__textSection{

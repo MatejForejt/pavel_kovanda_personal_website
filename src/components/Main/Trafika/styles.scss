@@ -1,3 +1,5 @@
+@use "../../../styles/system/_shortcuts.scss" as *;
+ 
 @media (min-aspect-ratio: 1/1) {
     @media only screen and ( min-width: 1730px) {
         .Trafika{
@@ -51,7 +53,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -136,7 +138,7 @@
                                 .word{
                                     font-size: 3rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -153,7 +155,7 @@
                                 .word{
                                     font-size: 3rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -195,7 +197,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -254,7 +256,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -339,7 +341,7 @@
                                 .word{
                                     font-size: 3rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -356,7 +358,7 @@
                                 .word{
                                     font-size: 3rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -398,7 +400,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -457,7 +459,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -543,7 +545,7 @@
                                 .word{
                                     font-size: 2.5rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -560,7 +562,7 @@
                                 .word{
                                     font-size: 2.5rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -602,7 +604,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -661,7 +663,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -746,7 +748,7 @@
                                 .word{
                                     font-size: 2.5rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -763,7 +765,7 @@
                                 .word{
                                     font-size: 2.5rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -805,7 +807,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -864,7 +866,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -949,7 +951,7 @@
                                 .word{
                                     font-size: 2rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -966,7 +968,7 @@
                                 .word{
                                     font-size: 2rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -1014,7 +1016,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -1073,7 +1075,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -1158,7 +1160,7 @@
                                 .word{
                                     font-size: 1.8rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -1175,7 +1177,7 @@
                                 .word{
                                     font-size: 1.8rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -1223,7 +1225,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -1282,7 +1284,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -1367,7 +1369,7 @@
                                 .word{
                                     font-size: 1.5rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -1384,7 +1386,7 @@
                                 .word{
                                     font-size: 1.5rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -1432,7 +1434,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -1491,7 +1493,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -1577,7 +1579,7 @@
                                 .word{
                                     font-size: 1.2rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -1594,7 +1596,7 @@
                                 .word{
                                     font-size: 1.2rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -1642,7 +1644,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -1704,7 +1706,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -1792,7 +1794,7 @@
                                 .word{
                                     font-size: 2rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -1809,7 +1811,7 @@
                                 .word{
                                     font-size: 2rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -1855,7 +1857,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -1914,7 +1916,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -2002,7 +2004,7 @@
                                 .word{
                                     font-size: 1.6rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -2019,7 +2021,7 @@
                                 .word{
                                     font-size: 1.6rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -2065,7 +2067,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -2124,7 +2126,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -2215,7 +2217,7 @@
                                 .word{
                                     font-size: 1.5rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -2232,7 +2234,7 @@
                                 .word{
                                     font-size: 1.5rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -2279,7 +2281,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -2338,7 +2340,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -2429,7 +2431,7 @@
                                 .word{
                                     font-size: 1.3rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -2446,7 +2448,7 @@
                                 .word{
                                     font-size: 1.3rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -2493,7 +2495,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }
@@ -2552,7 +2554,7 @@
                 width: 30%;
                 height: 50%;
                 z-index: 1;
-                color: #fff;
+                color: var(--whiteText);
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -2643,7 +2645,7 @@
                                 .word{
                                     font-size: 1.3rem;
                                     font-weight: 300;
-                                    color: #fff;
+                                    color: var(--whiteText);
                                 }
                             }
                             .secondary-text{
@@ -2660,7 +2662,7 @@
                                 .word{
                                     font-size: 1.3rem;
                                     font-weight: 300;
-                                    color: #ff1d28
+                                    color: var(--redText)
                                 }
                             }
                         }
@@ -2707,7 +2709,7 @@
                     .divider{
                         width: 100%;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: var(--whiteBG);
         
                     }
                 }

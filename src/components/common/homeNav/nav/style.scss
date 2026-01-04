@@ -1,0 +1,167 @@
+@use "../../../../styles/system/_shortcuts.scss" as *;
+ 
+// add border left to each link item and change the class based on the detection background function
+
+.homeNav{
+    position: relative;
+    width: 100%;
+    z-index: 60;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    z-index: 60;
+    
+    @include hb((
+        xxs: (height: 20vh),
+        md: (height: 6vh),
+        smt: (height: 6vh),
+    )); 
+
+    @include vb((
+        xs: (height: 15vh),
+        md: (height: 8vh),
+        lg: (height: 6vh),
+    )); 
+
+    .navbar__content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 0 1vw;
+
+        @include hb((
+            xxs: (margin-bottom: 2.5vh, flex-direction: row, justify-content: space-between, align-items: center),
+            md: (margin-bottom: 0),
+            smt: (margin-bottom: 0),
+        ));
+
+        @include vb((
+            xs: (margin-bottom: 0.5vh, flex-direction: column, justify-content: center, align-items: flex-start),
+            lg: ( flex-direction: row, justify-content: space-between, align-items: center),
+        ));
+
+        .navbar__links{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+
+            @include hb((
+                xxs: (flex-wrap: wrap, gap: 0.75vw, width: 70%),
+                md: (flex-wrap: nowrap, gap: 0.75vw, width: 60%),
+                smt: (flex-wrap: nowrap, gap: 0.75vw, width: 70%),
+            ));
+
+            @include vb((
+                xs: (flex-wrap: wrap, gap: 2vw, width: 100%),
+                md: (flex-wrap: nowrap, gap: 0.75vw, width: 70%),
+                lg: (flex-wrap: nowrap, gap: 0.75vw, width: 75%),
+            ));
+
+            .nav__item{
+                width: fit-content;
+                height: fit-content;
+                position: relative;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: row;
+                gap: 1vw;
+
+                .nav__divider{
+                    width: 1px;
+                    background: #ffff;
+                    margin-top: 5px;
+
+                    @include hb((
+                        xxs: (height: 5vh),
+                        md: (height: 3vh),
+                        smt: (height: 3vh),
+                    ));
+
+
+                    @include vb((
+                        xs: (height: 2vh),
+                    ));
+                }
+            }
+        }
+
+        .nav__divider{
+            width: 2px;
+            background: #ffff;
+
+            @include hb((
+                xxs: (height: 10vh),
+                md: (height: 3vh),
+                smt: (height: 3vh),
+            ));
+            @include vb((
+                xs: (height: 5vh, display: none),
+                lg: (height: 3vh),
+            ));
+        }
+
+        .nav__cta{
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+
+            @include hb((
+                xxs: (width: 30%),
+                md: (width: 35%),
+                smt: (width: 15%),
+            ));
+
+            @include hb((
+                xs: (width: 15%),
+            ));
+
+
+            .nav__cta__text{
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
+                gap: 1rem;
+                cursor: pointer;
+                @include hb((
+                    xxs: (display: none),
+                    md: (display: flex),
+                    smt: (display: none),
+                ));
+
+                @include vb((
+                    xs: (display: none),
+                ));
+
+                h4{
+                    margin: 0;
+                    @include font(SBody);
+                    font-weight: 300;
+                    font-family: Helvetica;
+                    color: var(--whiteText);
+                    text-transform: uppercase;
+
+                }
+
+                img{
+                    
+                }
+            }
+        }
+    }
+
+    .nav__border{
+        // NOTE the change color based on background detection wont function if in abslute position because absolute positioning will take the element out of the normal document flow so no background can be detected behind it
+        width: 100%;
+        height: 1px;
+        background: #ffffff;
+    }
+}

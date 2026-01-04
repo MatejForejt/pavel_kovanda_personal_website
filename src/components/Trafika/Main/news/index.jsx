@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import CTAButtonLink from "@/components/common/Buttons/CTALink";
 
 const NewProduct = [
     {
@@ -12,11 +13,11 @@ const NewProduct = [
 
 
 const titleAnim = {
-    initial: (i) => ({ 
+    initial:{ 
         opacity: 0, 
-        y: i * -20, 
+        y: 20, 
         x: 0
-    }),
+    },
     enter: (i) => ({
         opacity: 1,
         y: 0,
@@ -50,12 +51,10 @@ const SplitWords = ({ text, variants }) => {
 const imageAnim = {
     initial: { 
         opacity: 1,
-        height: "30vh",
         y: -100
     },
     enter: {
         opacity: 1,
-        height: "50vh",
         y: 0,
         transition: {
             duration: 1,
@@ -72,7 +71,7 @@ export default function newProduct() {
         offset: ["start end", "end start"]
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], [50, -50]);
+    const y = useTransform(scrollYProgress, [0, 1], [150, -150]);
     return (
         <section className="trafika__manin__newProduct" ref={containerRef}>
             {NewProduct.map((product, index) => {
@@ -80,29 +79,11 @@ export default function newProduct() {
                 return (
                     <div key={index} className="trafika__main__newProduct__item">
                         <div className="trafika__main__newProduct__text">
-                            <div className="trafika__main__newProduct__text__title">
-                                <h2>
-                                    <SplitWords text='novinka v naši trafice' variants={titleAnim}/>
-                                </h2>
-                            </div>
-                            <div className="trafika__main__newProduct__text__description">
-                                <div className="trafika__main__newProduct__text__description__item">
-                                    <h5>
-                                        00
-                                    </h5>
-                                    <p>
-                                        {title}
-                                    </p>
-                                </div>
-                                <div className="trafika__main__newProduct__text__description__item">
-                                    <h5>
-                                        01
-                                    </h5>
-                                    <p>
-                                        {description}
-                                    </p>
-                                </div>
-                            </div>
+                            <h2>
+                                <SplitWords text='novinka v naši trafice' variants={titleAnim}/>
+                            </h2>
+                            <div className="divider"/>
+                            <CTAButtonLink text="PODÍVAT SE" href="" />
                         </div>
                         <div className="trafika__main__newProduct__image">
                             <motion.div 

@@ -1,11 +1,12 @@
+@use "../../../styles/system/_shortcuts.scss" as *;
+ 
 .trafika__main{
     position: relative;
     width: 100vw;
-    height: 600vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #EDEFF3;
 
 }

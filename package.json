@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
+    "sync:styles": "node scripts/sync-styles.js",
+    "watch:styles": "chokidar \"src/**/*.@(scss|css)\" -i \"src/styles/**\" -i \"**/node_modules/**\" -i \"**/.next/**\" --events add,unlink -c \"npm run sync:styles\"",
+    "dev:next": "next dev --turbopack",
+    "dev": "npm-run-all -p watch:styles dev:next",
+    "build": "npm run sync:styles && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -13,16 +16,20 @@
     "framer-motion": "^12.5.0",
     "js-cookie": "^3.0.5",
     "lenis": "^1.2.3",
-    "next": "15.2.2",
+    "next": "^15.5.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "regl": "^2.1.1",
     "resend": "^4.2.0",
     "sass": "^1.85.1",
     "sonner": "^2.0.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/react": "19.2.7",
+    "chokidar-cli": "^3.0.0",
     "eslint": "^9",
-    "eslint-config-next": "15.2.2"
+    "eslint-config-next": "15.2.2",
+    "npm-run-all": "^4.1.5"
   }
 }

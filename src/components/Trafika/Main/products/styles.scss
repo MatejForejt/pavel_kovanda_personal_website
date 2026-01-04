@@ -1,3 +1,5 @@
+@use "../../../../styles/system/_shortcuts.scss" as *;
+ 
 @media (min-aspect-ratio: 1/1) {
     @media only screen and ( min-width: 1730px) {
         .trafika__products{
@@ -31,7 +33,7 @@
                 p{
                     font-size: 1.2rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -127,14 +129,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 3rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -195,7 +197,7 @@
                 p{
                     font-size: 1.2rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -291,14 +293,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 3rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -359,7 +361,7 @@
                 p{
                     font-size: 1.2rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -455,14 +457,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 2.5rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -523,7 +525,7 @@
                 p{
                     font-size: 1.2rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -619,14 +621,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 2.5rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -687,7 +689,7 @@
                 p{
                     font-size: 1.2rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -783,14 +785,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 2rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -851,7 +853,7 @@
                 p{
                     font-size: 1.1rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -947,14 +949,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 1.8rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -1015,7 +1017,7 @@
                 p{
                     font-size: 1.1rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -1111,14 +1113,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 1.4rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -1179,7 +1181,7 @@
                 p{
                     font-size: 1.1rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -1275,14 +1277,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 1.2rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -1346,7 +1348,7 @@
                 p{
                     font-size: 1.2rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -1442,14 +1444,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 2.5rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -1510,7 +1512,7 @@
                 p{
                     font-size: 1.2rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -1606,14 +1608,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 2.5rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -1674,7 +1676,7 @@
                 p{
                     font-size: 1.2rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -1770,14 +1772,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 2rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -1838,7 +1840,7 @@
                 p{
                     font-size: 1.2rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -1934,14 +1936,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 2rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;
@@ -2002,7 +2004,7 @@
                 p{
                     font-size: 1.2rem;
                     font-weight: 300;
-                    color: #fff;
+                    color: var(--whiteText);
                     margin: 0;
                 }
             }
@@ -2098,14 +2100,14 @@
                                 flex-direction: column;
                                 padding: 5vh 2.5vw;
                                 gap: 1vh;
-                                color: #fff;
+                                color: var(--whiteText);
         
                                 h5{
                                     font-size: 2rem;
                                     font-weight: 300;
                                     text-transform: capitalize;
                                     font-family: 'Times New Roman', Times, serif;
-                                    color: #ff1d28;
+                                    color: var(--redText);
                                     margin: 0;
                                     overflow: hidden;
                                     position: relative;

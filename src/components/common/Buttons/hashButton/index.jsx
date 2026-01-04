@@ -47,7 +47,7 @@ const charAnim2 = {
 };
 
 // Pass variants to SplitText
-const SplitText = ({ text, active, variants }) => {
+const SplitText = ({ text, active, variants, className }) => {
   return text.split("").map((char, index) => {
     return (
       <motion.span 
@@ -56,6 +56,7 @@ const SplitText = ({ text, active, variants }) => {
         initial="initial"
         animate={active ? "enter" : "exit"} 
         custom={index}
+        className={`span ${className}`}
       >
         {char}
       </motion.span>
@@ -63,7 +64,7 @@ const SplitText = ({ text, active, variants }) => {
   });
 };
 
-export default function HashtagButton({ text, onClick, isActive: externalIsActive }) {
+export default function HashtagButton({ text, onClick, isActive: externalIsActive, className = "", classNameFont = "" }) {
   const [active, setActive] = useState(false); // For text animation
   const [isSelected, setIsSelected] = useState(false); // Track clicked/selected state
   const controls = useAnimationControls();
@@ -226,7 +227,7 @@ export default function HashtagButton({ text, onClick, isActive: externalIsActiv
 
   return (
     <div
-      className="hashtagButton"
+      className={"hashtagButton " + className}
       onMouseEnter={onHoverEnter} 
       onMouseLeave={onHoverLeave}
     >
@@ -235,11 +236,11 @@ export default function HashtagButton({ text, onClick, isActive: externalIsActiv
         onClick={handleClick} 
       >
         <label className="hashtagButton__label">
-          <SplitText text={text} active={active} variants={charAnim1} />
+          <SplitText text={text} active={active} variants={charAnim1} className={` ${classNameFont}`} />
         </label>
         
         <label className="hashtagButton__label">
-          <SplitText text={text} active={active} variants={charAnim2} />
+          <SplitText text={text} active={active} variants={charAnim2} className={` ${classNameFont}`} />
         </label>
       </div>
       

@@ -16,7 +16,7 @@ const createPerspectiveVariant = (path) => {
     return {
         initial: {
             scale: 0.9,
-            y: '75vh',
+            y: '100vh',
             opacity: 1,
             borderTopLeftRadius: useRadius ? 100 : 0,  
             borderTopRightRadius: useRadius ? 100 : 0, 
@@ -51,7 +51,7 @@ const createPerspectiveVariant = (path) => {
         },
         exit: {
             scale: 0.9,
-            y: "75vh",
+            y: "100vh",
             opacity: 0.5,
             borderTopLeftRadius: useRadius ? 100 : 0,  
             borderTopRightRadius: useRadius ? 100 : 0, 
@@ -140,10 +140,13 @@ const opacity = {
 }
 
 const routes = {
-    "/": "Domovní Stránka",
+    "/": "Domov",
     "/trafika": "Trafika",
-    "/contact": "Kontakt",
-    "/fotogalerie": "FotoGalerie",
+    "/kontakt": "Kontakt",
+    "/rtn": "RTN",
+    "/bmt": "BMT",
+    "/vodomery": "Vodoměry",
+    "/partneri": "Partneři",
 }
 
 export default function Transition({children}) {
@@ -217,14 +220,7 @@ export default function Transition({children}) {
                 animate='enter'
                 exit='exit'
                 variants={contentVariants}
-                onAnimationStart={() => {
-                    if (!isRouteChanging && !firstLoad) {
-                        if (window.lenis) window.lenis.stop();
-                    }
-                }}
-                onAnimationComplete={() => {
-                    if (window.lenis) window.lenis.start();
-                }}
+
             >
                 <motion.div 
                     initial='initial'

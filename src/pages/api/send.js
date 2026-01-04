@@ -30,7 +30,7 @@ export default async function handler(req, res) {
           max-width: 600px;
           margin: 0 auto;
           padding: 40px 20px;
-          background-color: #ffffff;
+          background-color: #ffff;
         }
         .grid-container {
           display: grid;
@@ -160,17 +160,17 @@ export default async function handler(req, res) {
 
     const result = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'gekoncicek@gmail.com',
+      to: 'kovandapavel7@gmail.com',
       reply_to: email,
       subject: subjectLine,
       html: htmlContent,
       // Also include hashtags in the text version
       text: 
         `Jméno: ${name} ${surname || ''}
-Telefon: ${phone || ''}
-Email: ${email || ''}
-${hashtags.length > 0 ? `Kategorie: ${hashtags.join(', ')}\n` : ''}
-Zpráva: ${message || ''}`,
+        Telefon: ${phone || ''}
+        Email: ${email || ''}
+        ${hashtags.length > 0 ? `Kategorie: ${hashtags.join(', ')}\n` : ''}
+        Zpráva: ${message || ''}`,
     });
 
     console.log('Výsledek Resend API:', result);

@@ -1,40 +1,28 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from 'framer-motion';
-import { CookiesSections, PrivacySections } from "@/constants/cookiesTerms";
-import { useGlobalContext } from "@/context/globalContext";
+import { PrivacySections } from "@/constants/cookiesTerms";
 
 const wordAnim = {
-    initial: { 
-        opacity: 0, 
-        y: -30 
-    },
+    initial: { opacity: 0, y: 40 },
     enter: (i) => ({
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.3,
-            delay: i * 0.01 + 4.6,
-        },
-        ease: [0.6, 0.05, -0.01, 0.9]
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        delay: (i * 0.02) + 1,
+      },
+      ease: [0.6, 0.05, -0.01, 0.9]
     }),
-}
-
-
-const wordAnim2 = {
-    initial: { 
-        opacity: 0, 
-        y: -30 
-    },
-    enter: (i) => ({
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.3,
-            delay: i * 0.01 + 0.75,
-        },
-        ease: [0.6, 0.05, -0.01, 0.9]
-    }),
-}
+    exit: (i) => ({
+      opacity: 0,
+      y: -40,
+      transition: {
+        duration: 0.3,
+        delay: i * 0.02,
+      },
+      ease: [0.6, 0.05, -0.01, 0.9]
+    })
+};
 
 
 const SplitText = ({ text, variants }) => {
@@ -74,7 +62,6 @@ const SplitWords = ({ text, variant }) => {
 export default function TermsContent() {
     const [activeSection, setActiveSection] = useState(null);
     const sectionRefs = useRef([]);
-    const { slideLoad } = useGlobalContext();
 
     const handleLinkClick = (id) => {
         const section = document.getElementById(id);
@@ -109,15 +96,15 @@ export default function TermsContent() {
             <div className="cover">
                 <div className="cover__header">
                     <h1>
-                        <SplitText text="VŠE O OCHRANĚ A" variants={ slideLoad ? wordAnim : wordAnim2} />
+                        <SplitText text="VŠE O OCHRANĚ A" variants={ wordAnim} />
                     </h1>
                     <h1>
-                        <SplitText text="POUŽITÍ VAŠICH ÚDAJŮ" variants={ slideLoad ? wordAnim : wordAnim2} />
+                        <SplitText text="POUŽITÍ VAŠICH ÚDAJŮ" variants={ wordAnim} />
                     </h1>
                 </div>
                 <div className="cover__desc">
                     <p>
-                        <SplitWords text="Detaily a všechny podrobné informace" variant={slideLoad ? wordAnim : wordAnim2} />
+                        <SplitWords text="Detaily a všechny podrobné informace" variant={wordAnim} />
                     </p>
                 </div>
             </div>

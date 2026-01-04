@@ -69,7 +69,9 @@
                     height: 35px;
                 }
                 .hashtagButton__container{
-                    pointer-events: none;
+                    .span{
+                        @include font(SLinks)
+                    }
                 }
             }
         }
@@ -83,7 +85,9 @@
                     height: 35px;
                 }
                 .hashtagButton__container{
-                    pointer-events: none;
+                    .span{
+                        @include font(SLinks)
+                    }
                 }
             }
         }

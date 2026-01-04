@@ -38,7 +38,7 @@
             .span{
                 position: relative;
                 cursor: pointer;
-                @include font(Nav);
+                @include font(SLinks);
                 font-weight: 300;
                 color: var(--whiteText);
                 text-transform: none;

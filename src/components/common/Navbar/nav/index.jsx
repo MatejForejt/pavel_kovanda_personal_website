@@ -221,13 +221,7 @@ export default function Nav() {
                             >
                                 <motion.h4 custom={2} variants={text} initial="initial" animate={isHovered ? "enter" : "exit"} className="logo">KONTAKTUJTE MĚ</motion.h4>
                                 <motion.div custom={1} variants={text} initial="initial" animate={isHovered ? "enter" : "exit"} className="nav__cta__text__icon">
-                                    <Image 
-                                        src="/icons/arrow-right.svg"
-                                        alt="Arrow Right"
-                                        width={24}
-                                        height={24}
-                                        className="img"
-                                    />
+                                    <span>→</span>
                                 </motion.div>
                             </div>
                             <CTAButtonLink text="SPOJIT SE" href="/kontakt"/>

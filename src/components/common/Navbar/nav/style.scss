@@ -103,6 +103,13 @@
                 .nav__cta__text__icon{
                     display: flex;
                     align-items: center;
+
+                    span{
+                        margin: 0;
+                        @include font(MBody);
+                        font-weight: 300;
+                        color: var(--whiteText);
+                    }
                 }
 
                 h4{
@@ -113,6 +120,14 @@
                     color: var(--whiteText);
                     text-transform: uppercase;
                     white-space: nowrap;
+                }
+
+
+                span{
+                    margin: 0;
+                    @include font(MBody);
+                    font-weight: 300;
+                    color: var(--whiteText);
                 }
             }
 

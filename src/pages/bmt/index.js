@@ -47,7 +47,7 @@ export default function FotoGaleriePage() {
       alt: 'bmt5',
       name: 'Montáž BMT',
       description: 'Bytový Měřič Tepla',
-      vertical: false
+      vertical: true
     },
     {
       src: '/images/vertical.png',

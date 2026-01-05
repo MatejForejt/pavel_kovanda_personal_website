@@ -22,31 +22,31 @@ export default function FotoGaleriePage() {
       vertical: false
     },
     {
-      src: '/images/horizontal.png',
-      alt: 'horizontal',
-      name: 'horizontal',
-      description: 'smrkovická',
-      vertical: false
-    },
-    {
-      src: '/images/horizontal.png',
-      alt: 'horizontal',
-      name: 'horizontal',
-      description: 'smrkovická',
-      vertical: false
-    },
-    {
-      src: '/images/vertical.png',
-      alt: 'horizontal',
-      name: 'horizontal',
-      description: 'smrkovická',
+      src: '/images/galerie/BMT/2.webp',
+      alt: 'bmt2',
+      name: 'Montáž BMT',
+      description: 'Bytový Měřič Tepla',
       vertical: true
     },
     {
-      src: '/images/horizontal.png',
-      alt: 'horizontal',
-      name: 'horizontal',
-      description: 'smrkovická',
+      src: '/images/galerie/BMT/3.webp',
+      alt: 'bmt3',
+      name: 'Montáž BMT',
+      description: 'Bytový Měřič Tepla',
+      vertical: true
+    },
+    {
+      src: '/images/galerie/BMT/4.webp',
+      alt: 'bmt4',
+      name: 'Montáž BMT',
+      description: 'Bytový Měřič Tepla',
+      vertical: false
+    },
+    {
+      src: '/images/galerie/BMT/5.webp',
+      alt: 'bmt5',
+      name: 'Montáž BMT',
+      description: 'Bytový Měřič Tepla',
       vertical: false
     },
     {

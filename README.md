@@ -1,138 +1,52 @@
-# pavel_kovanda_personal_website
-Personal website of Pavel Kovanda made by Freelancer Matěj Forejt, in future under C3Studium (in progress of making). Powered by NEXT.JS a REACT.JS framerwork with Framer-Motion library and custom JavaScript and HTML canvas animations. All under a ownership. Do not directly copy. 
+# kovanda28.cz
 
+A personal website for Pavel Kovanda — a tradesman from Písek who fits and services water meters, RTN and BMT.
 
+There was one constraint from the client: **no photos of him anywhere.** No portrait, no shot of him at work, no face on the contact page. On a personal website, that takes away the thing personal websites usually lean on.
 
-When developing use this script: 
+So the whole site became a play with the simplest tools I had left — typography, layout, gradients and color. The name is split into single characters and animated in. Thin dividers carry the rhythm. Sections alternate between symmetrical splits and deliberately off-balance ones. Behind everything, a canvas of slowly drifting color keeps the page alive. The only photographs are of the work itself — radiators, meters, installations — and they live in the galleries.
 
-{
-  "name": "pk_website",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "sync:styles": "node scripts/sync-styles.js",
-    "watch:styles": "chokidar \"src/**/*.@(scss|css)\" -i \"src/styles/system/**\" -i \"**/node_modules/**\" -i \"**/.next/**\" -c \"npm run sync:styles\"",
-    "dev:next": "next dev --turbopack",
-    "dev": "npm-run-all -p watch:styles dev:next",
-    "build": "npm run sync:styles && next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@vercel/analytics": "^1.5.0",
-    "framer-motion": "^12.5.0",
-    "js-cookie": "^3.0.5",
-    "lenis": "^1.2.3",
-    "next": "^15.5.9",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "regl": "^2.1.1",
-    "resend": "^4.2.0",
-    "sass": "^1.85.1",
-    "sonner": "^2.0.2"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/react": "19.2.7",
-    "chokidar-cli": "^3.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "15.2.2",
-    "npm-run-all": "^4.1.5"
-  }
-}
+It was difficult. I think I made a decent website out of it.
 
+Hand-coded. No AI.
 
-when running on production: 
+## How it's built
 
+Next.js 15 (Pages Router), React 19, plain JavaScript, Sass. `npm install && npm run dev`.
 
-{
-  "name": "pk_website",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@vercel/analytics": "^1.5.0",
-    "framer-motion": "^12.5.0",
-    "js-cookie": "^3.0.5",
-    "lenis": "^1.2.3",
-    "next": "^15.5.9",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "regl": "^2.1.1",
-    "resend": "^4.2.0",
-    "sass": "^1.85.1",
-    "sonner": "^2.0.2"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/react": "19.2.7",
-    "chokidar-cli": "^3.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "15.2.2",
-    "npm-run-all": "^4.1.5"
-  }
-}
+**A custom responsive system instead of a framework.** [src/styles/system/](src/styles/system/) defines orientation-aware breakpoints — a landscape scale (`xxs` 400px → `huge` 1730px) and a portrait one — and wraps every media query in a CSS `@layer`, so the larger viewport always wins the cascade no matter the source order. Two extra landscape steps, `smt` and `mdt`, are height-guarded so tablets don't pick up desktop rules.
 
+**Typography as tokens.** [_typography.scss](src/styles/system/_typography.scss) holds one `$font-scale` map: every token (`h1`, `MBody`, `Nav`, `legal`, …) carries a family plus a size for each breakpoint in both orientations. In a component it's a single line — `@include font(h1)` — and the type scales everywhere.
 
+**Layout in flexbox and viewport units.** Per-breakpoint rules are written as maps: `@include hb((xxs: (padding: 25vh 3.5vw), md: (...)))`. No grid system — the asymmetry lives in the vw/vh widths.
 
-########################
+**Styles wire themselves up.** [scripts/sync-styles.js](scripts/sync-styles.js) globs every non-system `.scss`, prepends the shortcuts import, and regenerates the `AUTO-IMPORT` block in [globals.scss](src/styles/globals.scss). chokidar watches for new files in dev; the build runs it once.
 
-## What This System Does
-Layered responsive Sass: breakpoints ordered small → large with smt/mdt specials; layers guarantee larger viewports win.
+**The same breakpoints in JS.** [checkViewport.js](src/helpers/checkViewport.js) mirrors the Sass maps through `matchMedia`, so animation logic can branch on the same names the styles use.
 
-Auto-scaling typography: sys.font scales across breakpoints via the layered mixins.
-Shortcut helpers: concise mixins for per-breakpoint styles (h-layer, h-prop, h-block, plus compact aliases).
+**The background** is a 2D canvas: 25 radial-gradient blobs in blue, violet and gold, each drifting toward a random target and choosing a new one when it arrives, over a dark teal base — [Background/index.jsx](src/components/common/Background/index.jsx).
 
-JS breakpoint helper: mirrors the Sass breakpoints (including height guards) for matchMedia/Framer logic.
-Auto-wiring styles: a sync script injects shortcuts into new style files and regenerates imports into globals.scss.
+**Contrast fixes itself.** Because that gradient moves, the nav can end up over anything. [detectBGcolor.js](src/lib/detectBGcolor.js) uses `elementsFromPoint` plus a luminance check to find what's actually behind the logo and flips it light or dark while you scroll.
 
+**Motion** is Framer Motion: page transitions that push the outgoing page down behind a rounded top edge and a labeled panel ([Transition](src/components/common/Transition/index.jsx)), character- and word-split intro text, a preloader whose percentage counter climbs in randomized stutters ([PreLoader](src/components/PreLoader/index.jsx)), and a draggable gallery carousel ([FotoGalerie](src/components/FotoGalerie/)). Lenis handles smooth scrolling and is stopped during route changes.
 
-## Key Files to Copy
-_breakpoints.scss – breakpoint maps.
-_mixins.scss – layered mixins (h/v, h-layer/v-layer, h-prop/v-prop, h-block/v-block), layer order, smt/mdt caps.
+**The rest.** Nine routes — home, trafika, three service galleries (`/rtn`, `/bmt`, `/vodomery`), partners, contact, plus GDPR and cookies pages — with a custom 404. The contact form posts to [/api/send](src/pages/api/send.js) and goes out through Resend as a hand-written HTML email. Cookie consent is split into four categories via `js-cookie`. Each page carries its own meta, Open Graph and Twitter tags; the homepage adds JSON-LD `LocalBusiness`. Google Analytics and Vercel Analytics are both wired in.
 
-_typography.scss – font tokens + font mixin that scales via the layers.
-_shortcuts.scss – shorthand helpers (h/v, hb/vb, compact xxs-h etc., font).
-sync-styles.js – injects shortcuts into new styles and regenerates auto-import block in globals.
-package.json scripts – sync:styles, watch:styles, dev, build (with pre-sync).
-next.config.mjs – Sass includePath + additionalData if you want; ESM-safe __dirname.
-checkViewport.js – JS breakpoint mirror for matchMedia logic.
+## Screenshots
 
-## How It Works
-Layers: Declared in _mixins.scss (bp-xxs … bp-huge, vp-xs … vp-lg). smt/mdt have height guards and caps to avoid overriding desktops; layers enforce priority (larger wins).
+_To be added._
 
-# Helpers: 
-Use include h(...) / h-layer / h-prop / h-block (and vertical counterparts) or the compact aliases (xxs-h, lg-h, etc.). Fonts via @include font(token).
+<!-- Drop images into docs/screenshots/ and link them here:
+![Home](docs/screenshots/home.png)
+![Gallery](docs/screenshots/gallery.png)
+-->
 
-# Auto-wiring: 
-sync-styles.js prepends _shortcuts.scss" as *; to non-system style files and inserts @use "...relative-path..." as _sN; into an auto block in globals.scss. Watcher (watch:styles) runs on add/remove events; build runs sync:styles once.
+## Links
 
-# JS helper: 
-checkViewport.js exports bpH/bpV, matchesH/V, currentH/V, and media query lists, matching the Sass maps (including smt/mdt height conditions).
-Usage (Sass)
-No per-file @use needed if the sync script injected shortcuts. Otherwise: _shortcuts.scss" as *;.
+- **Live:** https://www.kovanda28.cz/
+- **Design (Figma):** https://www.figma.com/design/hUYQVyFcAB5scaW7PlcYy4/Websites?node-id=4209-5153
+- **Me:** https://matejforejt.com
 
-## Set styles inline:
-.nav {
-  @include hb((
-    xxs: (height: 6vh, flex-direction: column),
-    smt: (height: 5vh),
-    lg:  (height: 6vh)
-  ));
-  @include font(Nav);
-}
+---
 
-
-## Usage (JS/Framer)
-Import from checkViewport.js:
-import { currentH, matchesH } from "@/helpers/checkViewport";
-const bp = currentH();        // e.g., "lg"
-const isLgUp = matchesH("lg");
-
-## Vision
-A self-contained responsive system for Next/React combining layered Sass (larger wins), auto-scaling typography, JS breakpoint parity, and automated wiring of styles—no off-the-shelf package needed, but packaged for reuse as a custom toolkit.
+© Matěj Forejt. Code is under [MIT](LICENSE); the design, copy and photographs are not — please don't copy the site.
